@@ -21,7 +21,6 @@ namespace MinimalOwinWebApiClient
             Console.WriteLine("Add a new company...");
             var result = companyClient.AddCompany(new Company
             {
-                Id = nextId,
                 Name = string.Format("New Company #{0}", nextId)
             });
             WriteStatusCodeResult(result);
